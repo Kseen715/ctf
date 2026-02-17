@@ -1,23 +1,68 @@
 # CTF
 
-<!-- <div id="auto-sort-start"/>
+<!-- [<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>]("/") -->
+<!-- [<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("/") -->
+<!-- [<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>]("/") -->
+<!-- [<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>]("/") -->
+<!-- [<img src="image/README/logo-ios.png" title="iOS" alt="iOS" height="15"/>]("/") -->
+<!-- [<img src="image/README/logo-android.png" title="android" alt="android" height="15"/>]("/") -->
 
-- `C` <div id="auto-sort-start"/>
-  - [argparse](https://github.com/cofyc/argparse) - Python's argparse implementation for C
-  - [raylib](https://github.com/raysan5/raylib) - simple and easy-to-use library to enjoy videogames programming (with no external dependencies)
-  <div id="auto-sort-end"/>
-- `C++` <div id="auto-sort-start"/>
-  - [Dear ImGui](https://github.com/ocornut/imgui) - powerful graphical user interface library
-  <div id="auto-sort-end"/>
-- `Python` <div id="auto-sort-start"/>
-  - [DearPyGui](https://github.com/hoffstadt/DearPyGui) - modern, fast and powerful GUI framework for Python based on ImGui
-  - [tqdm](https://github.com/tqdm/tqdm) - fast, extensible progress bar for Python and CLI
-  <div id="auto-sort-end"/>
-<div id="auto-sort-end"/> -->
+<div id="auto-sort-start"/>
 
-[<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/windows11/windows11-original.svg" title="windows" height="20"/>]()
-[<img src="https://github.com/user-attachments/assets/1f7d1915-492b-415f-a692-6b73a85798f9" title="web" height="20"/>]()
-[<img src="https://github.com/user-attachments/assets/29013655-1aa9-4743-8dff-94a334cb447a" title="linux" height="20"/>]()
-[<img src="https://github.com/user-attachments/assets/6a6e0a55-4fc8-4a07-b5dc-2a304501ffd8" title="macOS" height="20"/>]()
-[<img src="https://github.com/user-attachments/assets/40aee79a-f3e4-40dc-b67d-149b6810f481" title="iOS" height="20"/>]()
-[<img src="https://github.com/user-attachments/assets/7c73febd-b16c-4fd0-92d2-bd94b0e75f9c" title="android" height="20"/>]()
+- ## OSINT / GEOINT <div id="auto-sort-start"/>
+
+  - `Карты` <div id="auto-sort-start"/>
+
+    - [Baidu Maps](https://map.baidu.com) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://map.baidu.com")] - Китайские карты
+    - [Open Infrastructure Map](https://openinframap.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://openinframap.org/")] - карты инфраструктуры (солнечная энергия, электроэнергия, телекоммуникации, нефть и природный газ)
+    - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://yandex.ru/maps")] - Российские карты
+    - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.google.com/maps/")] - карты Google
+    - [Google Earth](https://earth.google.com/web/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://earth.google.com/web/")] - карты Google Earth, хороши для рельефа, есть куча слоев данных
+Other Pipelines
+Water
+    - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://yandex.ru/maps")] - Российские карты
+    - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.google.com/maps/")] - карты Google
+    - [Google Earth](https://earth.google.com/web/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://earth.google.com/web/")] - карты Google Earth, хороши для рельефа, есть куча слоев данных
+    <div id="auto-sort-end"/>
+
+  - `Языки` <div id="auto-sort-start"/>
+    - [Draw Chinese](https://www.drawchinese.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.drawchinese.com/")] - ввод китайских иероглифов мышкой
+    - [i2OCR](https://www.i2ocr.com/free-online-chinese-simplified-ocr) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.i2ocr.com/free-online-chinese-simplified-ocr")] - неплохой OCR для китайского
+    <div id="auto-sort-end"/>
+
+  <div id="auto-sort-end"/>
+
+- ## Steganography <div id="auto-sort-start"/>
+
+  - `Изображения` <div id="auto-sort-start"/>
+    - [Aperi'Solve](https://aperisolve.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://aperisolve.com/")] - мощный инструмент для вытаскивания скрытой информации из изображений
+    - [IICSF](https://iicsf.com/steganography-online/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://iicsf.com/steganography-online/")] - простенький инструмент для вытаскивания скрытой информации из изображений
+    - [FutureBoy Steganographic Decoder](https://futureboy.us/stegano/decinput.html) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://futureboy.us/stegano/decinput.html")] - простенький инструмент для вытаскивания скрытой информации из изображений и аудио
+    <div id="auto-sort-end"/>
+
+  - `Аудио` <div id="auto-sort-start"/>
+    - [FutureBoy Steganographic Decoder](https://futureboy.us/stegano/decinput.html) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://futureboy.us/stegano/decinput.html")] - простенький инструмент для вытаскивания скрытой информации из изображений и аудио
+    <div id="auto-sort-end"/>
+
+  - `Общие` <div id="auto-sort-start"/>
+    - [Online Binwalk Utility](https://www.unroll.ing/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.unroll.ing/")] - online binwalk
+    - [zsteg](https://github.com/zed-0xff/zsteg) [[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>]("https://github.com/zed-0xff/zsteg")] - detect stegano-hidden data in PNG & BMP
+    <div id="auto-sort-end"/>
+    
+  <div id="auto-sort-end"/>
+
+- ## Crypto <div id="auto-sort-start"/>
+
+  - `Декодеры текста` <div id="auto-sort-start"/>
+    - [DenCode](https://dencode.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://dencode.com/")] - умеет декодировать текст сразу из нескольких кодировок и простых шифров
+    - [CyberChef](https://cyberchef.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://cyberchef.org/")] - универсальный комбайн для криптографии
+    - [dCode.fr](https://www.dcode.fr/en) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.dcode.fr/en")] - умеет декодировать текст из почти всех популярных кодировок и шифров
+    <div id="auto-sort-end"/>
+
+  - `Деобфускаторы` <div id="auto-sort-start"/>
+    - [BloggerByte Javascript Decode](https://de4js.bloggerbyte.net/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://de4js.bloggerbyte.net/")] - деобфускатор JavaScript
+    <div id="auto-sort-end"/>
+  
+  <div id="auto-sort-end"/>
+
+<div id="auto-sort-end"/>
