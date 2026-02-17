@@ -18,11 +18,6 @@
     - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://yandex.ru/maps")] - Российские карты
     - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.google.com/maps/")] - карты Google
     - [Google Earth](https://earth.google.com/web/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://earth.google.com/web/")] - карты Google Earth, хороши для рельефа, есть куча слоев данных
-Other Pipelines
-Water
-    - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://yandex.ru/maps")] - Российские карты
-    - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://www.google.com/maps/")] - карты Google
-    - [Google Earth](https://earth.google.com/web/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>]("https://earth.google.com/web/")] - карты Google Earth, хороши для рельефа, есть куча слоев данных
     <div id="auto-sort-end"/>
 
   - `Языки` <div id="auto-sort-start"/>
