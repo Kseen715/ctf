@@ -258,10 +258,11 @@ def sort_readme(file_path: str):
         Logger.warning(f'No hash file found for {file_path}. '\
                        + 'New hash will be created')
     
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         readme = f.readlines()
     
     def sort_block(lines):
+        """Recursively sort blocks marked with auto-sort-start/end tags"""
         sorted_lines = []
         i = 0
         while i < len(lines):
@@ -269,41 +270,137 @@ def sort_readme(file_path: str):
                 sorted_lines.append(lines[i])
                 i += 1
                 start = i
-                nested_blocks = []
-                while i < len(lines) and not '<div id="auto-sort-end"/>' in lines[i]:
+                
+                # Find matching end tag with proper nesting support
+                depth = 1
+                while i < len(lines) and depth > 0:
                     if '<div id="auto-sort-start"/>' in lines[i]:
-                        nested_start = i
-                        while i < len(lines) and not '<div id="auto-sort-end"/>' in lines[i]:
-                            i += 1
-                        nested_end = i
-                        nested_blocks.append((nested_start, nested_end))
+                        depth += 1
+                    elif '<div id="auto-sort-end"/>' in lines[i]:
+                        depth -= 1
+                        if depth == 0:
+                            break
                     i += 1
+                
                 end = i
+                block_content = lines[start:end]
+                
+                # Find nested blocks at the immediate next level
+                nested_blocks = []
+                j = 0
+                while j < len(block_content):
+                    if '<div id="auto-sort-start"/>' in block_content[j]:
+                        nested_start = j
+                        depth = 1
+                        j += 1
+                        while j < len(block_content) and depth > 0:
+                            if '<div id="auto-sort-start"/>' in block_content[j]:
+                                depth += 1
+                            elif '<div id="auto-sort-end"/>' in block_content[j]:
+                                depth -= 1
+                            j += 1
+                        nested_end = j
+                        nested_blocks.append((nested_start, nested_end))
+                    else:
+                        j += 1
+                
                 if nested_blocks:
-                    # Sort entire nested blocks
-                    blocks_to_sort = [lines[start:nested_blocks[0][0]]]
-                    for j in range(len(nested_blocks)):
-                        blocks_to_sort.append(lines[nested_blocks[j][0]:nested_blocks[j][1]+1])
-                        if j < len(nested_blocks) - 1:
-                            blocks_to_sort.append(lines[nested_blocks[j][1]+1:nested_blocks[j+1][0]])
-                    blocks_to_sort.append(lines[nested_blocks[-1][1]+1:end])
-                    sorted_blocks = sorted(blocks_to_sort, key=lambda block: re.sub(r'[^a-zA-Z0-9\s+\-*/=%^()]', '', ''.join(block)))
+                    # Extract blocks to sort (text + nested blocks as units)
+                    blocks_to_sort = []
+                    prev_end = 0
+                    for nested_start, nested_end in nested_blocks:
+                        # Add text before nested block (skip if empty/whitespace only)
+                        if nested_start > prev_end:
+                            text_block = block_content[prev_end:nested_start]
+                            if any(line.strip() for line in text_block):
+                                blocks_to_sort.append(text_block)
+                        # Add nested block (recursively sort its content)
+                        nested_block = block_content[nested_start:nested_end]
+                        sorted_nested = sort_block(nested_block)
+                        blocks_to_sort.append(sorted_nested)
+                        prev_end = nested_end
+                    # Add remaining text after last nested block (skip if empty/whitespace only)
+                    if prev_end < len(block_content):
+                        text_block = block_content[prev_end:]
+                        if any(line.strip() for line in text_block):
+                            blocks_to_sort.append(text_block)
+                    
+                    # Sort blocks by their text content (strip markdown for comparison)
+                    sorted_blocks = sorted(blocks_to_sort, 
+                                         key=lambda block: ''.join(block).lower().strip())
                     for block in sorted_blocks:
                         sorted_lines.extend(block)
                 else:
-                    # Sort lines within the block
-                    lines_to_sort = lines[start:end]
-                    sorted_lines.extend(sorted(lines_to_sort, key=lambda line: re.sub(r'[^a-zA-Z0-9\s+\-*/=%^()]', '', line)))
-                sorted_lines.append(lines[end])
+                    # No nested blocks - just sort lines (filter empty lines)
+                    non_empty_lines = [line for line in block_content if line.strip()]
+                    sorted_lines.extend(sorted(non_empty_lines, key=lambda line: line.lower().strip()))
+                
+                # Add the closing tag
+                if i < len(lines):
+                    sorted_lines.append(lines[i])
+                    i += 1
             else:
                 sorted_lines.append(lines[i])
-            i += 1
+                i += 1
+        
         return sorted_lines
     
     sorted_readme = sort_block(readme)
     
-    with open(file_path, 'w') as f:
-        f.writelines(sorted_readme)
+    def format_markdown(lines):
+        """Add proper spacing to markdown following standard formatting rules"""
+        formatted = []
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            prev_line = lines[i-1] if i > 0 else ''
+            next_line = lines[i+1] if i < len(lines) - 1 else ''
+            
+            # Before ## headers, add blank line if previous isn't blank/start tag
+            if line.strip().startswith('- ##'):
+                if prev_line.strip() and '<div id="auto-sort-start"/>' not in prev_line:
+                    formatted.append('\n')
+            
+            # Add current line
+            formatted.append(line)
+            
+            # Determine if we need a blank line after current line
+            need_blank = False
+            
+            # After auto-sort-start tag, add blank line if next is content (MD033)
+            if '<div id="auto-sort-start"/>' in line:
+                if next_line.strip() and next_line.strip().startswith('- ##'):
+                    need_blank = True
+            
+            # After headers (##), add blank line if next isn't blank/tag/another header
+            if line.strip().startswith('#') and not line.strip().startswith('####'):
+                if next_line.strip() and not next_line.strip().startswith('#') and \
+                   '<div id="auto-sort' not in next_line:
+                    need_blank = True
+            
+            # Between different list levels (- ## and  - `)
+            if line.strip().startswith('- ##') and next_line.strip().startswith('  -'):
+                need_blank = True
+            
+            # After end of nested block, before next item at same level
+            if '<div id="auto-sort-end"/>' in line:
+                if next_line.strip() and not '<div id="auto-sort-end"/>' in next_line and \
+                   not next_line.strip().startswith('<div id="auto-sort-start"/>') and \
+                   not next_line.strip().startswith('- ##'):
+                    need_blank = True
+            
+            # Add blank line if needed and next line isn't already blank
+            if need_blank and next_line.strip():
+                formatted.append('\n')
+            
+            i += 1
+        
+        return formatted
+    
+    formatted_readme = format_markdown(sorted_readme)
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.writelines(formatted_readme)
     
     Logger.happy(f'Sorted {file_path}')
     save_hash_binary(hash_file(file_path), hashfile_path)
