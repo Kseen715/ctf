@@ -7,17 +7,20 @@ on:
   pull_request:
     branches:
       - main
-  
+
 jobs:
   fetch-commit-message:
     runs-on: ubuntu-latest
     outputs:
       commit_message: ${{ steps.get_commit_message.outputs.message }}
     steps:
-    - uses: actions/checkout@v4
-    - name: "Fetch commit message"
-      id: get_commit_message
-      run: echo "message=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v4
+      - name: "Fetch commit message"
+        id: get_commit_message
+        run: |
+          echo "message<<EOF" >> $GITHUB_OUTPUT
+          git log -1 --pretty=%B >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
   check-no-ci:
     runs-on: ubuntu-latest
@@ -25,14 +28,14 @@ jobs:
     outputs:
       no_ci: ${{ steps.check_no_ci.outputs.no_ci }}
     steps:
-    - name: "Check for [no_ci] in commit message"
-      id: check_no_ci
-      run: |
-        if echo "${{ needs.fetch-commit-message.outputs.commit_message }}" | grep -iq '\[no_ci\]'; then
-          echo "no_ci=true" >> $GITHUB_OUTPUT
-        else
-          echo "no_ci=false" >> $GITHUB_OUTPUT
-        fi
+      - name: "Check for [no_ci] in commit message"
+        id: check_no_ci
+        run: |
+          if echo "${{ needs.fetch-commit-message.outputs.commit_message }}" | grep -iq '\[no_ci\]'; then
+            echo "no_ci=true" >> $GITHUB_OUTPUT
+          else
+            echo "no_ci=false" >> $GITHUB_OUTPUT
+          fi
 
   spellcheck:
     runs-on: ubuntu-latest
@@ -58,11 +61,11 @@ jobs:
       - name: "Set up Python"
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: "Sort README.md's"
         run: python ./lone_sort_readme.py
-        
+
       - name: "Commit results"
         run: |
           git config --global user.email ""
