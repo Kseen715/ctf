@@ -46,6 +46,7 @@
     - [FutureBoy Steganographic Decoder](https://futureboy.us/stegano/decinput.html) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://futureboy.us/stegano/decinput.html)] - простенький инструмент для вытаскивания скрытой информации из изображений и аудио
     - [IICSF](https://iicsf.com/steganography-online/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://iicsf.com/steganography-online/)] - простенький инструмент для вытаскивания скрытой информации из изображений
     - [StegOnline](https://georgeom.net/StegOnline/upload) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://georgeom.net/StegOnline/upload)] - простенький инструмент для вытаскивания скрытой информации из изображений
+    - [iSteg](https://github.com/rafiibrahim8/iSteg) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/rafiibrahim8/iSteg)]
     <div id="auto-sort-end"/>
 
   - `Общие` <div id="auto-sort-start"/>
