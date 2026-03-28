@@ -23,7 +23,7 @@
 
 - ## Forensics <div id="auto-sort-start"/>
   - `Базы данных` <div id="auto-sort-start"/>
-    - [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/rafiibrahim8/iSteg)] - Браузер баз данных для SQLite
+    - [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/sqlitebrowser/sqlitebrowser)] - Браузер баз данных для SQLite
     <div id="auto-sort-end"/>
   <div id="auto-sort-end"/>
 
@@ -36,8 +36,12 @@
     - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://yandex.ru/maps)] - Российские карты
     <div id="auto-sort-end"/>
 
+  - `Разведка` <div id="auto-sort-start"/>
+    - [ꓘamerka GUI](https://github.com/woj-ciech/Kamerka-GUI) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)] - инструмент для разведки в сфере Интернета вещей и промышленных систем управления (Powered by Shodan)
+    <div id="auto-sort-end"/>
+
   - `Юридические лица` <div id="auto-sort-start"/>
-    - [SOCIETE SAS](https://www.societe.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.drawchinese.com/)] - поиск по юр.лицам Франции
+    - [SOCIETE SAS](https://www.societe.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.societe.com/)] - поиск по юр.лицам Франции
     <div id="auto-sort-end"/>
 
   - `Языки` <div id="auto-sort-start"/>
