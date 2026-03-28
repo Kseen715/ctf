@@ -36,20 +36,20 @@
     - [Flickr/map](https://www.flickr.com/map) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.flickr.com/map)] - карта фотографий с Flickr
     - [Google Earth](https://earth.google.com/web/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://earth.google.com/web/)] - карты Google Earth, хороши для рельефа, есть куча слоев данных
     - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.google.com/maps/)] - карты Google
+    - [HINP](https://4pda.to/forum/index.php?showtopic=668768) [[<img src="image/README/logo-android.png" title="android" alt="android" height="15"/>](https://4pda.to/forum/index.php?showtopic=668768)] - позволяет просматривать фотографии и сообщения из ВКонтакте на карте
     - [instahunt](https://instahunt.huntintel.io/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://instahunt.huntintel.io/)] - отобразит фото из Instagram, скопируй полученный код и встать в поле на сайте чтобы увидеть результат
     - [mattw.io/youtube-geofind](https://mattw.io/youtube-geofind/location) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://mattw.io/youtube-geofind/location)] - находит видео на YouTube по геометке
+    - [mindat](https://www.mindat.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.mindat.org/)] - карта минералов
     - [Open Infrastructure Map](https://openinframap.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://openinframap.org/)] - карты инфраструктуры (солнечная энергия, электроэнергия, телекоммуникации, нефть и природный газ)
     - [opencellid](https://opencellid.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://opencellid.org/)] - вышки сотовой связи, найдет MCC, MNC, LAC, CID
     - [pastvu](https://pastvu.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://pastvu.com/)] - карта фотогрфий из прошлого
     - [SegmentExplorer](https://www.doogal.co.uk/SegmentExplorer) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.doogal.co.uk/SegmentExplorer)] - альтернативная карта активности спортсменов STRAVA
     - [STRAVA/global-heatmap](https://www.strava.com/maps/global-heatmap) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.strava.com/maps/global-heatmap)] - карта активности спортсменов STRAVA
+    - [suncalc](https://www.suncalc.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.suncalc.org/)] - расчет траектории движения Солнца с картой
     - [udeuschle/panoramas](https://www.udeuschle.de/panoramas/makepanoramas_en.htm) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.udeuschle.de/panoramas/makepanoramas_en.htm)] - составит панораму гор по геометке
     - [WIGLE](https://wigle.net/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://wigle.net/)] - покажет SSID и BSSID Wi-Fi точки по геометке
     - [windy](https://www.windy.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.windy.com/)] - карта ветров и погоды
     - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://yandex.ru/maps)] - Российские карты
-    - [suncalc](https://www.suncalc.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.suncalc.org/)] - расчет траектории движения Солнца с картой
-    - [mindat](https://www.mindat.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.mindat.org/)] - карта минералов
-    - [HINP](https://4pda.to/forum/index.php?showtopic=668768) [[<img src="image/README/logo-android.png" title="android" alt="android" height="15"/>](https://4pda.to/forum/index.php?showtopic=668768)] - позволяет просматривать фотографии и сообщения из ВКонтакте на карте
     <div id="auto-sort-end"/>
 
   - `Разведка` <div id="auto-sort-start"/>
