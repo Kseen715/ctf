@@ -47,6 +47,9 @@
     - [WIGLE](https://wigle.net/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://wigle.net/)] - покажет SSID и BSSID Wi-Fi точки по геометке
     - [windy](https://www.windy.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.windy.com/)] - карта ветров и погоды
     - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://yandex.ru/maps)] - Российские карты
+    - [suncalc](https://www.suncalc.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.suncalc.org/)] - расчет траектории движения Солнца с картой
+    - [mindat](https://www.mindat.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.mindat.org/)] - карта минералов
+    - [HINP](https://4pda.to/forum/index.php?showtopic=668768) [[<img src="image/README/logo-android.png" title="android" alt="android" height="15"/>](https://4pda.to/forum/index.php?showtopic=668768)] - позволяет просматривать фотографии и сообщения из ВКонтакте на карте
     <div id="auto-sort-end"/>
 
   - `Разведка` <div id="auto-sort-start"/>
