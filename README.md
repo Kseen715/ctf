@@ -34,10 +34,24 @@
     - [Google Maps](https://www.google.com/maps/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.google.com/maps/)] - карты Google
     - [Open Infrastructure Map](https://openinframap.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://openinframap.org/)] - карты инфраструктуры (солнечная энергия, электроэнергия, телекоммуникации, нефть и природный газ)
     - [Yandex Maps](https://yandex.ru/maps) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://yandex.ru/maps)] - Российские карты
+    - [WIGLE](https://wigle.net/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://wigle.net/)] - покажет SSID и BSSID Wi-Fi точки по геометке
+    - [mattw.io/youtube-geofind](https://mattw.io/youtube-geofind/location) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://mattw.io/youtube-geofind/location)] - находит видео на YouTube по геометке
+    - [windy](https://www.windy.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.windy.com/)] - карта ветров и погоды
+    - [opencellid](https://opencellid.org/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://opencellid.org/)] - вышки сотовой связи, найдет MCC, MNC, LAC, CID
+    - [STRAVA/global-heatmap](https://www.strava.com/maps/global-heatmap) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.strava.com/maps/global-heatmap)] - карта активности спортсменов STRAVA
+    - [SegmentExplorer](https://www.doogal.co.uk/SegmentExplorer) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.doogal.co.uk/SegmentExplorer)] - альтернативная карта активности спортсменов STRAVA
+    - [udeuschle/panoramas](https://www.udeuschle.de/panoramas/makepanoramas_en.htm) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.udeuschle.de/panoramas/makepanoramas_en.htm)] - составит панораму гор по геометке
+    - [Flickr/map](https://www.flickr.com/map) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.flickr.com/map)] - карта фотографий с Flickr
+    - [pastvu](https://pastvu.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://pastvu.com/)] - карта фотогрфий из прошлого
+    - [f4map](https://demo.f4map.com) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://demo.f4map.com)] - покажет здания любого города в 3D, данные из OpenStreetMap
+    - [domophoto](https://domophoto.ru/map.php) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://domophoto.ru/map.php)] - найдет фото зданий, их серию и номер, больше снимков в России и Украине
+    - [birdhunt](https://birdhunt.huntintel.io/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://birdhunt.huntintel.io/)] - найдет твитты рядом, создаст ссылку на Twitter, где введен поисковый запрос с координатами и заданным радиусом
+    - [instahunt](https://instahunt.huntintel.io/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://instahunt.huntintel.io/)] - отобразит фото из Instagram, скопируй полученный код и встать в поле на сайте чтобы увидеть результат
     <div id="auto-sort-end"/>
 
   - `Разведка` <div id="auto-sort-start"/>
     - [ꓘamerka GUI](https://github.com/woj-ciech/Kamerka-GUI) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)] - инструмент для разведки в сфере Интернета вещей и промышленных систем управления (Powered by Shodan)
+    - [](https://whopostedwhat.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://whopostedwhat.com/)] - находит фото в Instagram с фильтром по дате
     <div id="auto-sort-end"/>
 
   - `Юридические лица` <div id="auto-sort-start"/>
