@@ -50,7 +50,7 @@
     <div id="auto-sort-end"/>
 
   - `Разведка` <div id="auto-sort-start"/>
-    - [](https://whopostedwhat.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://whopostedwhat.com/)] - находит фото в Instagram с фильтром по дате
+    - [whopostedwhat](https://whopostedwhat.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://whopostedwhat.com/)] - находит фото в Instagram с фильтром по дате
     - [ꓘamerka GUI](https://github.com/woj-ciech/Kamerka-GUI) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/woj-ciech/Kamerka-GUI)] - инструмент для разведки в сфере Интернета вещей и промышленных систем управления (Powered by Shodan)
     <div id="auto-sort-end"/>
 
