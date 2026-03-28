@@ -34,6 +34,10 @@
     - [Draw Chinese](https://www.drawchinese.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.drawchinese.com/)] - ввод китайских иероглифов мышкой
     - [i2OCR](https://www.i2ocr.com/free-online-chinese-simplified-ocr) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.i2ocr.com/free-online-chinese-simplified-ocr)] - неплохой OCR для китайского
     <div id="auto-sort-end"/>
+
+  - `Юридические лица` <div id="auto-sort-start"/>
+    - [SOCIETE SAS](https://www.societe.com/) [[<img src="image/README/logo-web.png" title="web" alt="web" height="15"/>](https://www.drawchinese.com/)] - поиск по юр.лицам Франции
+    <div id="auto-sort-end"/>
   <div id="auto-sort-end"/>
 
 - ## Steganography <div id="auto-sort-start"/>
