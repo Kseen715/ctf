@@ -58,4 +58,10 @@
     - [zsteg](https://github.com/zed-0xff/zsteg) [[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/zed-0xff/zsteg)] - detect stegano-hidden data in PNG & BMP
     <div id="auto-sort-end"/>
   <div id="auto-sort-end"/>
+
+- ## Forensics <div id="auto-sort-start"/>
+  - `Базы данных` <div id="auto-sort-start"/>
+    - [sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser) [[<img src="image/README/logo-windows.png" title="windows" alt="windows" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-linux.png" title="linux" alt="linux" height="15"/>](https://github.com/rafiibrahim8/iSteg)[<img src="image/README/logo-macos.png" title="macOS" alt="macOS" height="15"/>](https://github.com/rafiibrahim8/iSteg)] - Браузер баз данных для SQLite
+    <div id="auto-sort-end"/>
+  <div id="auto-sort-end"/>
 <div id="auto-sort-end"/>
